@@ -1,0 +1,12 @@
+{
+  "name": "commitlint-pre-commit-hook",
+  "version": "1.0.0",
+  "description": "A pre-commit hook for commitlint",
+  "main": "index.js",
+  "repository": "https://github.com/alessandrojcm/commitlint-pre-commit-hook.git",
+  "author": "Alessandro Cuppari <alessandrojcuppari@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@commitlint/cli": "^7.0.0"
+  }
+}
