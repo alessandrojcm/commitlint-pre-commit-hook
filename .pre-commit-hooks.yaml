@@ -1,0 +1,6 @@
+- id: commitlint
+  name: commitlint
+  description: Commitlint hoook
+  language: node
+  entry: commitlint --edit
+  verbose: true
