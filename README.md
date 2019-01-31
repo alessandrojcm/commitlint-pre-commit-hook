@@ -21,5 +21,7 @@
             stages: [commit-msg]
             additional_dependencies: ['@commitlint/config-angular']
     ```
-
-
+- Install the [`commit-msg`](https://pre-commit.com/#pre-commit-for-commit-messages) hook in your project repo:
+    ```shell
+    pre-commit install --hook-type commit-msg
+    ```
