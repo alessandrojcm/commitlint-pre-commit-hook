@@ -1,4 +1,4 @@
-# Commitlink hook for pre-commit
+# Commitlint hook for pre-commit
 
 ## Configuration
 
@@ -6,7 +6,7 @@
 * Add the following to your `.pre-commit-config.yaml`:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-      sha: v1.0.0
+      rev: v2.1.0
       hooks:
           - id: commitlint
             stages: [commit-msg]
@@ -15,7 +15,7 @@
   add it to the `additional_dependencies` parameter of the hooks, i.e:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-      sha: v1.0.0
+      rev: v2.1.0
       hooks:
           - id: commitlint
             stages: [commit-msg]
