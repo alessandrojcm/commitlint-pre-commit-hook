@@ -4,7 +4,7 @@
   "description": "A pre-commit hook for commitlint",
   "main": "index.js",
   "repository": "https://github.com/alessandrojcm/commitlint-pre-commit-hook.git",
-  "author": "Alessandro Cuppari <alessandrojcuppari@gmail.com>",
+  "author": "Alessandro Cuppari <me@alessandrojcm.dev>",
   "license": "MIT",
   "bin": {
     "commitlint": "./node_modules/@commitlint/cli/lib/cli.js"
