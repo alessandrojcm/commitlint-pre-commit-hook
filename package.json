@@ -10,6 +10,7 @@
     "commitlint": "./node_modules/@commitlint/cli/lib/cli.js"
   },
   "dependencies": {
-    "@commitlint/cli": "8.3.4"
+    "@commitlint/cli": "8.3.4",
+    "core-js": "^3.6.4"
   }
 }
