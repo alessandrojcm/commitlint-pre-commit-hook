@@ -3,4 +3,4 @@
   description: Commitlint hook
   language: node
   entry: commitlint --edit
-  verbose: true
+  verbose: false
