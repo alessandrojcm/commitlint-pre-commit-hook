@@ -25,20 +25,3 @@
     ```shell
     pre-commit install --hook-type commit-msg
     ```
-
-### Usage in Travis CI
-
-- Add the following to your `.pre-commit-config.yaml`:
-    ```
-    - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-      rev: <latest tag>
-      hooks:
-          - id: commitlint-travis
-            stages: [manual]
-    ```
-- Add the following to your `.travis.yml`:
-    ```
-    script:
-      - pip install pre-commit
-      - pre-commit run --hook-stage manual commitlint-travis
-    ```
