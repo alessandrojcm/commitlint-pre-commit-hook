@@ -1,14 +1,13 @@
 {
   "name": "commitlint-pre-commit-hook",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "A pre-commit hook for commitlint",
   "main": "index.js",
-  "repository": "https://github.com/alessandrojcm/commitlint-pre-commit-hook.git",
-  "author": "Alessandro Cuppari <me@alessandrojcm.dev>",
+  "repository": "https://github.com/biarri/commitlint-pre-commit-hook",
+  "author": "Biarri Optimisation <thomas.cranny@biarri.com>",
   "license": "MIT",
   "bin": {
-    "commitlint": "./node_modules/@commitlint/cli/lib/cli.js",
-    "commitlint-travis": "./node_modules/@commitlint/travis-cli/lib/cli.js"
+    "commitlint": "./node_modules/@commitlint/cli/lib/cli.js"
   },
   "dependencies": {
     "@commitlint/cli": "9.1.1",
