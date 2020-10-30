@@ -29,8 +29,8 @@ repository. A good starting point is this example file:
   entry:
 
   ```yaml
-  - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-    rev: v2.2.0
+  - repo: https://github.com/biarri/commitlint-pre-commit-hook
+    rev: v5.0.0
     hooks:
       - id: commitlint
         stages: [commit-msg]
@@ -46,7 +46,9 @@ repository. A good starting point is this example file:
   default_stages: [commit]
   ```
 
-- Install the [`commit-msg`](https://pre-commit.com/#pre-commit-for-commit-messages) hook in your project repo:
+- Install the
+  [`commit-msg`](https://pre-commit.com/#pre-commit-for-commit-messages)
+  hook in your project repo: 
   ```shell
   pre-commit install --hook-type commit-msg
   ```
@@ -99,7 +101,7 @@ gotten stuck.
       hooks:
         - id: prettier
     - repo: https://github.com/biarri/commitlint-pre-commit-hook
-      rev: v3.0.0
+      rev: v5.0.0
       hooks:
         - id: commitlint
           stages: [commit-msg]

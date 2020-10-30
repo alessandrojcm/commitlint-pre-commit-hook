@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "commitlint-pre-commit-hook"
-version = "3.0.0"
+version = "5.0.0"
 description = "A @commitlint/cli hook for pre-commit"
 authors = ["Biarri Optimisation <thomas.cranny@biarri.com>", "Alessandro Cuppari <me@alessandrojcm.dev>"]
 license = "MIT"
