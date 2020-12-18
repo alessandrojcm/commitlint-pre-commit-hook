@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@commitlint/travis-cli": "11.0.0",
-    "@commitlint/cli": "11.0.0",
-    "core-js": "^3.8.0"
+    "@commitlint/cli": "11.0.0"
   }
 }
