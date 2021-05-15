@@ -7,11 +7,11 @@
   "author": "Alessandro Cuppari <me@alessandrojcm.dev>",
   "license": "MIT",
   "bin": {
-    "commitlint": "./node_modules/@commitlint/cli/lib/cli.js",
-    "commitlint-travis": "./node_modules/@commitlint/travis-cli/lib/cli.js"
+    "commitlint": "./node_modules/@commitlint/cli/cli.js",
+    "commitlint-travis": "./node_modules/@commitlint/travis-cli/cli.js"
   },
   "dependencies": {
-    "@commitlint/travis-cli": "9.1.1",
-    "@commitlint/cli": "9.1.1"
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/travis-cli": "12.1.4"
   }
 }
