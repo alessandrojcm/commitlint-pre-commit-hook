@@ -7,10 +7,9 @@
   "author": "Biarri Optimisation <thomas.cranny@biarri.com>",
   "license": "MIT",
   "bin": {
-    "commitlint": "./node_modules/@commitlint/cli/lib/cli.js"
+    "commitlint": "./node_modules/@commitlint/cli/cli.js"
   },
   "dependencies": {
-    "@commitlint/cli": "9.1.1",
-    "core-js": "^3.6.5"
+    "@commitlint/cli": "12.1.4"
   }
 }
