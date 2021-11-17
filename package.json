@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "@commitlint/cli": "12.1.4",
-    "@commitlint/travis-cli": "12.1.4"
+    "@commitlint/travis-cli": "15.0.0"
   }
 }
