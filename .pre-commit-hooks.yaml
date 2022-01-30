@@ -3,6 +3,9 @@
   description: Commitlint hook
   language: node
   entry: commitlint --edit
+  pass_filenames: false
+  always_run: true
+  verbose: true
 - id: commitlint-travis
   name: Check commit messages on Travis CI
   description: Lint all relevant commits for a change or PR on Travis CI
