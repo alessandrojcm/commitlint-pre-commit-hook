@@ -6,7 +6,7 @@
 * Add the following to your `.pre-commit-config.yaml`:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-      rev: v7.0.1
+      rev: <latest tag>
       hooks:
           - id: commitlint
             stages: [commit-msg]
@@ -15,7 +15,7 @@
   add it to the `additional_dependencies` parameter of the hooks, i.e:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
-      rev: v7.0.1
+      rev: <latest tag>
       hooks:
           - id: commitlint
             stages: [commit-msg]
