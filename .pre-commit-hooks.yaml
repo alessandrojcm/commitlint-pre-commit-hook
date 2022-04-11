@@ -4,3 +4,5 @@
   language: node
   entry: commitlint --edit
   verbose: false
+  pass_filenames: false
+  always_run: true

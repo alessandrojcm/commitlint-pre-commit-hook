@@ -10,6 +10,6 @@
     "commitlint": "./node_modules/@commitlint/cli/cli.js"
   },
   "dependencies": {
-    "@commitlint/cli": "12.1.4"
+    "@commitlint/cli": "16.1.0"
   }
 }
