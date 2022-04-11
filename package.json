@@ -1,7 +1,7 @@
 {
   "name": "commitlint-pre-commit-hook",
-  "version": "5.0.0",
-  "description": "A pre-commit hook for commitlint",
+  "version": "5.1.0",
+  "description": "A pre-commit hook for commitlint (forked by Biarri)",
   "main": "index.js",
   "repository": "https://github.com/biarri/commitlint-pre-commit-hook",
   "author": "Biarri Optimisation <thomas.cranny@biarri.com>",
