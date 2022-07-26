@@ -11,8 +11,9 @@
           - id: commitlint
             stages: [commit-msg]
     ```
-* If you are using one of Commitlint's [shared configurations](https://commitlint.js.org/#/reference-configuration?id=shareable-configuration),
-  add it to the `additional_dependencies` parameter of the hooks, i.e:
+* Add your [shared configurations](https://commitlint.js.org/#/reference-configuration?id=shareable-configuration) as a
+  dependency using the `additional_dependencies` parameter of the hooks, here we use the `@commitlint/config-angular`
+  as an example:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
       rev: <latest tag>
@@ -25,6 +26,9 @@
     ```shell
     pre-commit install --hook-type commit-msg
     ```
+  
+Note that you **need** to specify a shared configuration in order for `commitlint` to work, if `commitlint` is new to you
+just use their default configuration (`@commitlint/config-conventional`). For more information, refer to their [docs](https://commitlint.js.org/#/?id=getting-started).
 
 ### Usage in Travis CI
 
