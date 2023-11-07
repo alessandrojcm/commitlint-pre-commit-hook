@@ -5,6 +5,8 @@ updates:
   schedule:
     interval: daily
     time: "09:00"
+  commit-message:
+    prefix: "feat"
   open-pull-requests-limit: 10
   ignore:
   - dependency-name: "@commitlint/travis-cli"
