@@ -30,4 +30,5 @@ jobs:
         env:
           NEW_TAG: ${{ steps.version-bump.outputs.newTag }}
         run: echo "new tag $NEW_TAG"
-
+      - name: 'Create release'
+        run: gh release create "$NEW_TAG"
