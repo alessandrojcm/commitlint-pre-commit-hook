@@ -6,6 +6,9 @@
   "repository": "https://github.com/alessandrojcm/commitlint-pre-commit-hook.git",
   "author": "Alessandro Cuppari <me@alessandrojcm.dev>",
   "license": "MIT",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
   "bin": {
     "commitlint": "./node_modules/@commitlint/cli/cli.js",
     "commitlint-travis": "./node_modules/@commitlint/travis-cli/cli.js"
@@ -13,5 +16,8 @@
   "dependencies": {
     "@commitlint/cli": "^18.2.0",
     "@commitlint/travis-cli": "^18.2.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^22.0.7"
   }
 }
