@@ -16,13 +16,13 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Auto merge major versions
-        if: (contains(steps.metadata.outputs.dependency-names, '@commitlint/cli') || contains(steps.metadata.outputs.dependency-names, '@commitlint/travis-cli')) && step.metadata.outputs.update-type != 'version-update:semver-major'
+        if: (contains(steps.metadata.outputs.dependency-names, '@commitlint/cli') || contains(steps.metadata.outputs.dependency-names, '@commitlint/travis-cli')) && steps.metadata.outputs.update-type != 'version-update:semver-major'
         run: gh pr merge --body "BREAKING CHANGE" --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: Auto-merge non major versions
-        if: (contains(steps.metadata.outputs.dependency-names, '@commitlint/cli') || contains(steps.metadata.outputs.dependency-names, '@commitlint/travis-cli')) && step.metadata.outputs.update-type != 'version-update:semver-major'
+        if: (contains(steps.metadata.outputs.dependency-names, '@commitlint/cli') || contains(steps.metadata.outputs.dependency-names, '@commitlint/travis-cli')) && steps.metadata.outputs.update-type != 'version-update:semver-major'
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: ${{github.event.pull_request.html_url}}
