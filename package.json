@@ -15,8 +15,8 @@
     "commitlint-travis": "./node_modules/@commitlint/travis-cli/cli.js"
   },
   "dependencies": {
-    "@commitlint/cli": "^18.2.0",
-    "@commitlint/travis-cli": "^18.2.0"
+    "@commitlint/cli": "^18.4.0",
+    "@commitlint/travis-cli": "^18.4.0"
   },
   "devDependencies": {
     "semantic-release": "^22.0.7"
