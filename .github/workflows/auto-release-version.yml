@@ -22,8 +22,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Create new release
-        env:
-          GH_TOKEN: ${{ github.token }}
-        if: steps.semantic.outputs.new_release_published == 'true'
-        run: gh release create ${{ steps.semantic.outputs.new_release_git_tag }}
