@@ -7,6 +7,7 @@
   "author": "Alessandro Cuppari <me@alessandrojcm.dev>",
   "license": "MIT",
   "private": true,
+  "type": "module",
   "bin": {
     "commitlint": "./node_modules/@commitlint/cli/cli.js",
     "commitlint-travis": "./node_modules/@commitlint/travis-cli/cli.js"
