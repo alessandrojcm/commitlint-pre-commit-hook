@@ -13,7 +13,7 @@
     "commitlint-travis": "./node_modules/@commitlint/travis-cli/cli.js"
   },
   "dependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/travis-cli": "^19.0.3"
+    "@commitlint/cli": "^19.1.0",
+    "@commitlint/travis-cli": "^19.1.0"
   }
 }
