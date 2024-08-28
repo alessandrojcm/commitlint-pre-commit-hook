@@ -1,6 +1,6 @@
 {
   "name": "commitlint-pre-commit-hook",
-  "version": "9.16.0",
+  "version": "9.17.0",
   "description": "A pre-commit hook for commitlint",
   "main": "index.js",
   "repository": "https://github.com/alessandrojcm/commitlint-pre-commit-hook.git",
