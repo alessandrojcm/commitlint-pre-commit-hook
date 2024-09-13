@@ -2,7 +2,7 @@
 
 ## Configuration
 
-* Create your `commitlint` config file in the repo's root, as explained in Commitlint [docs](https://commitlint.js.org/#/reference-configuration).
+* Create your `commitlint` config file in the repo's root, as explained in Commitlint [docs](https://commitlint.js.org/reference/configuration.html#configuration).
 * Add the following to your `.pre-commit-config.yaml`:
     ```
     - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
@@ -11,7 +11,7 @@
           - id: commitlint
             stages: [commit-msg]
     ```
-* Add your [shared configurations](https://commitlint.js.org/#/reference-configuration?id=shareable-configuration) as a
+* Add your [shared configurations](https://commitlint.js.org/reference/configuration.html#shareable-configuration) as a
   dependency using the `additional_dependencies` parameter of the hooks, here we use the `@commitlint/config-angular`
   as an example:
     ```
@@ -22,13 +22,13 @@
             stages: [commit-msg]
             additional_dependencies: ['@commitlint/config-angular']
     ```
-- Install the [`commit-msg`](https://pre-commit.com/#pre-commit-for-commit-messages) hook in your project repo:
+- Install the [`commit-msg`](https://pre-commit.com/#commit-msg) hook in your project repo:
     ```shell
     pre-commit install --hook-type commit-msg
     ```
   
 Note that you **need** to specify a shared configuration in order for `commitlint` to work, if `commitlint` is new to you
-just use their default configuration (`@commitlint/config-conventional`). For more information, refer to their [docs](https://commitlint.js.org/#/?id=getting-started).
+just use their default configuration (`@commitlint/config-conventional`). For more information, refer to their [docs](https://commitlint.js.org/guides/getting-started.html).
 
 ### Usage in Travis CI
 
