@@ -1,12 +1,15 @@
 ---
 - id: commitlint
-  name: commitlint
-  description: Commitlint hook
+  name: Check commit message using commitlint
+  description: Lint commit message against @commitlint/config-conventional rules
   language: node
-  entry: commitlint --edit
-  verbose: false
-- id: commitlint-travis
-  name: Check commit messages on Travis CI
-  description: Lint all relevant commits for a change or PR on Travis CI
+  entry: commitlint
+  args: ["--edit"]
+  stages: [commit-msg]
+- id: commitlint-all
+  name: Check ALL commit messages using commitlint
+  description: Lint ALL commit messages against @commitlint/config-conventional rules
   language: node
-  entry: commitlint-travis
+  entry: commitlint
+  args: ["--from", "--"]
+  stages: [manual]
